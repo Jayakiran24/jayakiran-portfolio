@@ -24,7 +24,6 @@ export default function Hero() {
     >
       <div className="max-w-5xl mx-auto px-6 py-20 w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-
           {/* Left: Text */}
           <div>
             <div className="animate-on-load flex items-center gap-3 mb-6">
@@ -39,13 +38,19 @@ export default function Hero() {
             <h1 className="animate-on-load text-5xl md:text-6xl font-bold leading-[1.08] tracking-tight text-gray-900 mb-6 dark:text-white">
               Jaya Kiran
               <br />
-              <span className="text-purple-600 dark:text-purple-300">Sudanagunta</span>
+              <span className="text-purple-600 dark:text-purple-300">
+                Sudanagunta
+              </span>
             </h1>
 
             <p className="animate-on-load text-base text-gray-500 leading-relaxed mb-8 max-w-md dark:text-slate-300">
-              Building production-grade React & Next.js apps with component-driven architecture,
-              clean state management, and responsive UIs. Based in{" "}
-              <span className="text-gray-700 font-medium dark:text-slate-100">Bengaluru, India</span>.
+              Building production-grade React & Next.js apps with
+              component-driven architecture, clean state management, and
+              responsive UIs. Based in{" "}
+              <span className="text-gray-700 font-medium dark:text-slate-100">
+                Bengaluru, India
+              </span>
+              .
             </p>
 
             <div className="animate-on-load flex flex-wrap gap-3 mb-10">
@@ -55,6 +60,23 @@ export default function Hero() {
               >
                 View projects
                 <i className="ti ti-arrow-down text-sm" />
+              </a>
+              <a
+                href="/resume.html"
+                target="_blank"
+                rel="noreferrer"
+                className="px-5 py-2.5 border border-purple-100 text-purple-700 text-sm font-medium rounded-full hover:bg-purple-50 transition-colors flex items-center gap-2 dark:border-purple-800 dark:text-purple-300 dark:hover:bg-purple-950"
+              >
+                View resume
+                <i className="ti ti-file-text text-sm" />
+              </a>
+              <a
+                href="/resume/Jayakiran_Sudanagunta_Frontend_Developer.pdf"
+                download
+                className="px-5 py-2.5 border border-gray-200 text-gray-700 text-sm font-medium rounded-full hover:border-purple-300 hover:text-purple-600 transition-colors flex items-center gap-2 dark:border-slate-700 dark:text-slate-200 dark:hover:border-purple-500"
+              >
+                <i className="ti ti-download text-sm" />
+                Download resume
               </a>
               <a
                 href="https://www.linkedin.com/in/jaya-kiran-sudanagunta"
@@ -84,8 +106,12 @@ export default function Hero() {
                 { val: "4 yrs", label: "B.Tech IT" },
               ].map((s) => (
                 <div key={s.label}>
-                  <p className="text-2xl font-bold text-gray-900 dark:text-white">{s.val}</p>
-                  <p className="text-xs text-gray-400 mt-0.5 dark:text-slate-400">{s.label}</p>
+                  <p className="text-2xl font-bold text-gray-900 dark:text-white">
+                    {s.val}
+                  </p>
+                  <p className="text-xs text-gray-400 mt-0.5 dark:text-slate-400">
+                    {s.label}
+                  </p>
                 </div>
               ))}
             </div>
@@ -99,7 +125,9 @@ export default function Hero() {
               <div className="relative bg-white border border-gray-100 rounded-3xl p-8 shadow-sm dark:bg-slate-900 dark:border-slate-800">
                 {/* Avatar */}
                 <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-purple-600 to-teal-400 flex items-center justify-center mx-auto mb-6">
-                  <span className="font-mono font-bold text-3xl text-white">JK</span>
+                  <span className="font-mono font-bold text-3xl text-white">
+                    JK
+                  </span>
                 </div>
 
                 <h2 className="text-center font-semibold text-gray-900 text-lg mb-1 dark:text-white">
@@ -115,8 +143,13 @@ export default function Hero() {
                     { icon: "ti-mail", text: "jayakiranchowdary1@gmail.com" },
                     { icon: "ti-phone", text: "+91 9573205902" },
                   ].map((item) => (
-                    <div key={item.text} className="flex items-center gap-2.5 text-sm text-gray-500 dark:text-slate-400">
-                      <i className={`ti ${item.icon} text-purple-400 text-base`} />
+                    <div
+                      key={item.text}
+                      className="flex items-center gap-2.5 text-sm text-gray-500 dark:text-slate-400"
+                    >
+                      <i
+                        className={`ti ${item.icon} text-purple-400 text-base`}
+                      />
                       <span className="truncate">{item.text}</span>
                     </div>
                   ))}

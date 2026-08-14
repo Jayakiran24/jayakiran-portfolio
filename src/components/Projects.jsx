@@ -1,15 +1,45 @@
 import React, { useEffect, useRef } from "react";
-
 const projects = [
   {
     id: 1,
+    title: "AI Medical Report Explainer",
+    subtitle: "AI-Powered Medical Report Analysis Platform",
+    description:
+      "AI-powered web application that allows users to upload medical reports in PDF, image, or text format. The application extracts the report content, sends it through a backend API for AI processing, and displays a clear, user-friendly explanation of the results. Built with a responsive React frontend and Node.js backend with API integration.",
+    liveUrl: "https://ai-medical-report-explainer-self.vercel.app/",
+    githubUrl: "https://github.com/Jayakiran24",
+    tags: [
+      "React.js",
+      "JavaScript",
+      "Node.js",
+      "REST API",
+      "AI Integration",
+      "Tailwind CSS",
+    ],
+    accent: "blue",
+    highlights: [
+      "PDF, image, and text report upload",
+      "Node.js backend and AI API integration",
+      "Responsive UI with clear AI-generated results",
+    ],
+    icon: "ti-file-analytics",
+  },
+  {
+    id: 2,
     title: "RecipeHub",
     subtitle: "Food Delivery & Chef Booking Platform",
     description:
       "Dual-feature platform where users can browse restaurants, add dishes to a localStorage-persisted cart, and complete checkout — or book a personal chef with cuisine and time-slot selection. Features multi-page architecture with tabbed menus, floating cart bars, sticky booking sidebars, and Swiper.js carousels.",
     liveUrl: "https://recipe-hub-five-red.vercel.app/",
     githubUrl: "https://github.com/Jayakiran24",
-    tags: ["React.js", "Zustand", "Tailwind CSS", "React Router", "Swiper.js", "ES6+"],
+    tags: [
+      "React.js",
+      "Zustand",
+      "Tailwind CSS",
+      "React Router",
+      "Swiper.js",
+      "ES6+",
+    ],
     accent: "purple",
     highlights: [
       "Zustand global cart with real-time totals",
@@ -19,14 +49,21 @@ const projects = [
     icon: "ti-chef-hat",
   },
   {
-    id: 2,
+    id: 3,
     title: "Vadamalayan Hospitals",
     subtitle: "Appointment Booking Platform",
     description:
       "Responsive hospital booking UI with doctor browsing, consultation booking, and a Razorpay payment gateway. Booking confirmation only triggers on successful payment. REST APIs integrated via Axios for doctor listings; Formik + Yup handles patient form validation.",
     liveUrl: "https://vadamalayan-hospitals.vercel.app/",
     githubUrl: "https://github.com/Jayakiran24",
-    tags: ["React.js", "Tailwind CSS", "Axios", "Formik + Yup", "Razorpay", "React Router"],
+    tags: [
+      "React.js",
+      "Tailwind CSS",
+      "Axios",
+      "Formik + Yup",
+      "Razorpay",
+      "React Router",
+    ],
     accent: "teal",
     highlights: [
       "Razorpay payment gateway integration",
@@ -36,8 +73,78 @@ const projects = [
     icon: "ti-stethoscope",
   },
 ];
+// const projects = [
+//   {
+//     id: 1,
+//     title: "RecipeHub",
+//     subtitle: "Food Delivery & Chef Booking Platform",
+//     description:
+//       "Dual-feature platform where users can browse restaurants, add dishes to a localStorage-persisted cart, and complete checkout — or book a personal chef with cuisine and time-slot selection. Features multi-page architecture with tabbed menus, floating cart bars, sticky booking sidebars, and Swiper.js carousels.",
+//     liveUrl: "https://recipe-hub-five-red.vercel.app/",
+//     githubUrl: "https://github.com/Jayakiran24",
+//     tags: ["React.js", "Zustand", "Tailwind CSS", "React Router", "Swiper.js", "ES6+"],
+//     accent: "purple",
+//     highlights: [
+//       "Zustand global cart with real-time totals",
+//       "Cross-page state persistence",
+//       "Fully responsive across all screen sizes",
+//     ],
+//     icon: "ti-chef-hat",
+//   },
+//   {
+//     id: 2,
+//     title: "Vadamalayan Hospitals",
+//     subtitle: "Appointment Booking Platform",
+//     description:
+//       "Responsive hospital booking UI with doctor browsing, consultation booking, and a Razorpay payment gateway. Booking confirmation only triggers on successful payment. REST APIs integrated via Axios for doctor listings; Formik + Yup handles patient form validation.",
+//     liveUrl: "https://vadamalayan-hospitals.vercel.app/",
+//     githubUrl: "https://github.com/Jayakiran24",
+//     tags: ["React.js", "Tailwind CSS", "Axios", "Formik + Yup", "Razorpay", "React Router"],
+//     accent: "teal",
+//     highlights: [
+//       "Razorpay payment gateway integration",
+//       "Formik + Yup form validation",
+//       "REST API doctor listing & booking",
+//     ],
+//     icon: "ti-stethoscope",
+//   },
+//   {
+//     id: 3,
+//     title: "Vadamalayan Hospitals",
+//     subtitle: "Appointment Booking Platform",
+//     description:
+//       "Responsive hospital booking UI with doctor browsing, consultation booking, and a Razorpay payment gateway. Booking confirmation only triggers on successful payment. REST APIs integrated via Axios for doctor listings; Formik + Yup handles patient form validation.",
+//     liveUrl: "https://vadamalayan-hospitals.vercel.app/",
+//     githubUrl: "https://github.com/Jayakiran24",
+//     tags: [
+//       "React.js",
+//       "Tailwind CSS",
+//       "Axios",
+//       "Formik + Yup",
+//       "Razorpay",
+//       "React Router",
+//     ],
+//     accent: "teal",
+//     highlights: [
+//       "Razorpay payment gateway integration",
+//       "Formik + Yup form validation",
+//       "REST API doctor listing & booking",
+//     ],
+//     icon: "ti-stethoscope",
+//   },
+// ];
+
 
 const accentMap = {
+  blue: {
+    border: "border-l-blue-600",
+    badge: "bg-blue-50 text-blue-600 border-blue-100",
+    icon: "bg-blue-50 text-blue-600",
+    link: "text-blue-600 hover:text-blue-800",
+    dot: "bg-blue-600",
+    tag: "bg-blue-50 text-blue-700",
+  },
+
   purple: {
     border: "border-l-purple-600",
     badge: "bg-purple-50 text-purple-600 border-purple-100",
@@ -46,6 +153,7 @@ const accentMap = {
     dot: "bg-purple-600",
     tag: "bg-purple-50 text-purple-700",
   },
+
   teal: {
     border: "border-l-teal-400",
     badge: "bg-teal-50 text-teal-600 border-teal-100",
@@ -55,7 +163,6 @@ const accentMap = {
     tag: "bg-teal-50 text-teal-700",
   },
 };
-
 export default function Projects() {
   const sectionRef = useRef(null);
 
