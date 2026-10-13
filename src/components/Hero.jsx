@@ -61,17 +61,17 @@ export default function Hero() {
                 View projects
                 <i className="ti ti-arrow-down text-sm" />
               </a>
-              <a
-                href="/resume.html"
+              {/* <a
+                href="/resume/Jaya_Kiran_Sudanagunta_Frontend_Developer_Resume.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="px-5 py-2.5 border border-purple-100 text-purple-700 text-sm font-medium rounded-full hover:bg-purple-50 transition-colors flex items-center gap-2 dark:border-purple-800 dark:text-purple-300 dark:hover:bg-purple-950"
               >
                 View resume
                 <i className="ti ti-file-text text-sm" />
-              </a>
+              </a> */}
               <a
-                href="/resume/Jayakiran_Sudanagunta_Frontend_Developer.pdf"
+                href="/resume/Jaya_Kiran_Sudanagunta_Frontend_Developer_Resume.pdf"
                 download
                 className="px-5 py-2.5 border border-gray-200 text-gray-700 text-sm font-medium rounded-full hover:border-purple-300 hover:text-purple-600 transition-colors flex items-center gap-2 dark:border-slate-700 dark:text-slate-200 dark:hover:border-purple-500"
               >

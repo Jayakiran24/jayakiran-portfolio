@@ -89,7 +89,7 @@ export default function Resume() {
                 </div>
                 <div className="flex flex-wrap items-center gap-3">
                   <a
-                    href="/resume/Jayakiran_Sudanagunta_Frontend_Developer.pdf"
+                    href="/resume/Jaya_Kiran_Sudanagunta_Frontend_Developer_Resume.pdf"
                     target="_blank"
                     rel="noreferrer"
                     className="rounded-full border border-purple-100 bg-purple-50 px-4 py-2 text-sm font-medium text-purple-700 hover:bg-purple-100 transition-colors dark:border-purple-800 dark:bg-purple-950 dark:text-purple-300"
@@ -97,7 +97,7 @@ export default function Resume() {
                     View resume
                   </a>
                   <a
-                    href="/resume/Jayakiran_Sudanagunta_Frontend_Developer.pdf"
+                    href="/resume/Jaya_Kiran_Sudanagunta_Frontend_Developer_Resume.pdf"
                     download
                     className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-purple-300 hover:text-purple-600 transition-colors dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-purple-600"
                   >
@@ -184,7 +184,7 @@ export default function Resume() {
               </p>
               <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
                 <a
-                  href="/resume.html"
+                  href="/resume/Jaya_Kiran_Sudanagunta_Frontend_Developer_Resume.pdf"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center justify-center rounded-full bg-purple-600 px-6 py-3 text-sm font-medium text-white hover:bg-purple-800 transition-colors"
@@ -192,7 +192,7 @@ export default function Resume() {
                   View full resume
                 </a>
                 <a
-                  href="/resume/Jayakiran_Sudanagunta_Frontend_Developer.pdf"
+                  href="/resume/Jaya_Kiran_Sudanagunta_Frontend_Developer_Resume.pdf"
                   download
                   className="inline-flex items-center justify-center rounded-full border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 hover:border-purple-300 hover:text-purple-600 transition-colors dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200"
                 >
