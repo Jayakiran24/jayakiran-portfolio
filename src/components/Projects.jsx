@@ -1,7 +1,33 @@
 import React, { useEffect, useRef } from "react";
 const projects = [
   {
-    id: 1,
+  id: 1, // change to the next free id in your list
+  title: "Bill Nova",
+  subtitle: "GST Billing & Inventory Platform for Small Businesses",
+  description:
+    "Full-stack GST billing web app built for a commercial refrigeration shop. It creates tax invoices with automatic CGST + SGST or IGST, keeps stock and a running customer and supplier ledger, records part payments, and produces GST reports. Money is stored as integer paise and every invoice is written in a single database transaction, so a bill never exists without its ledger and stock entries. Built with Next.js, TypeScript and a Turso (libSQL) database, with owner and staff roles.",
+  liveUrl: "https://bill-nova-taupe.vercel.app/",
+  githubUrl: "https://github.com/Jayakiran24/Bill_Nova",
+  tags: [
+    "Next.js",
+    "TypeScript",
+    "React",
+    "Turso (libSQL)",
+    "Server Actions",
+    "Vercel",
+  ],
+  accent: "green",
+  highlights: [
+    "GST invoices with automatic CGST/SGST/IGST and printable A4 layout",
+    "Inventory, party ledgers, payments and HSN-wise GST reports with CSV export",
+    "Transactional billing with role-based access (owner and staff)",
+  ],
+  icon: "ti-receipt",
+},
+
+  {
+    
+    id: 2,
     title: "AI Medical Report Explainer",
     subtitle: "AI-Powered Medical Report Analysis Platform",
     description:
@@ -25,7 +51,7 @@ const projects = [
     icon: "ti-file-analytics",
   },
   {
-    id: 2,
+    id: 3,
     title: "RecipeHub",
     subtitle: "Food Delivery & Chef Booking Platform",
     description:
@@ -49,7 +75,7 @@ const projects = [
     icon: "ti-chef-hat",
   },
   {
-    id: 3,
+    id: 4,
     title: "Vadamalayan Hospitals",
     subtitle: "Appointment Booking Platform",
     description:
@@ -161,6 +187,15 @@ const accentMap = {
     link: "text-teal-600 hover:text-teal-800",
     dot: "bg-teal-400",
     tag: "bg-teal-50 text-teal-700",
+  },
+
+  green: {
+    border: "border-l-green-600",
+    badge: "bg-green-50 text-green-600 border-green-100",
+    icon: "bg-green-50 text-green-600",
+    link: "text-green-600 hover:text-green-800",
+    dot: "bg-green-600",
+    tag: "bg-green-50 text-green-700",
   },
 };
 export default function Projects() {
